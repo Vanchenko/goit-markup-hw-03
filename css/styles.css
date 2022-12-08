@@ -1,0 +1,133 @@
+:root {
+    --textbasecolor:#2e2f42; /* базовый цвет шрифта*/
+    --buttonbasecolor:#4d5ae5; /* цвет кнопки, эффекты */
+    --textsecondcolor: #434455; /* второй цвет шрифта*/
+    --addtextcolor: #ffffff; /*доп цвет заголовков, кнопок*/
+    --buttonbackcol: #404BBF; /*цвет бека кнопки*/
+    --footertextcol: #E7E9FC; /*цвет текста в футере*/
+    --footerlogocol: #f4f4fd; /*цвет лого STUDIO в футере*/
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: var(--textbasecolor);
+}
+footer {
+    background-color: var(--textbasecolor);
+}
+.link {
+    text-decoration: none;
+}
+.list {
+    list-style: none;
+}
+.logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--buttonbasecolor);
+}
+.logo-studio {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color:var(--textbasecolor);
+}
+.logo-studio-footer {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--footerlogocol);
+}
+.main-menu { 
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--textbasecolor);
+    text-decoration: none;
+}
+.main-menu:hover {
+    color :var(--textsecondcolor);
+}
+.main-menu:focus {
+    color: var(--buttonbasecolor);
+}
+.contacts {
+    text-decoration: none;
+    color:var(--textsecondcolor);
+}
+.contacts:hover, .contacts:focus {
+    color: var(--buttonbasecolor);
+}
+.hero-section {
+    background: var(--textbasecolor);
+}
+.hero-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    color: var(--addtextcolor);  
+}
+.button-order {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    letter-spacing: 0.04em;
+    color: var(--addtextcolor);
+    background-color: var(--buttonbasecolor);
+    cursor:pointer;
+}
+.button-order:hover {
+    background-color: var(--buttonbasecolor);
+}
+.button-order:focus {
+    background-color: var(--buttonbackcol);
+}
+.benefits-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color:var(--textbasecolor);
+}
+.benefits-text {
+    color:var(--textsecondcolor);
+}
+.work-title {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: var(--textbasecolor);
+    text-transform: capitalize;
+}
+.footer-text {
+    color: var(--footertextcol);
+}
+.button-filter {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.04em;
+    color: var(--buttonbasecolor);
+    cursor:pointer;
+}
+.button-filter:hover, .button-filter:focus {
+    background: var(--buttonbasecolor);
+    color : var(--addtextcolor)
+}
