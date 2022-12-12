@@ -59,19 +59,8 @@ header .container {
     gap: 40px;
     display: flex;
     align-items: center;
-    padding: 24px 0px 24px 77px; 
-    margin: 0px 0px 0px 0px;
-}
-.list-contacts {
-    list-style: none;
-    gap: 40px;
-    display: flex;
-    align-items: right;
-    padding: 24px 0px 24px 331px;
-    margin: 0px 0px 0px 0px;
-   /* margin-left: auto;
-    margin-top: 0px;
-    margin-bottom: 0px;*/
+    padding: 0; 
+    margin: 0px 0px 0px 77px;
 }
 .logo {
     font-family: "Raleway", sans-serif;
@@ -83,7 +72,7 @@ header .container {
     text-decoration: none;
     color: var(--buttonbasecolor);
     padding: 24px 0px 24px 0px;
-    margin: 0px 0px 0px 0px;
+    margin: 0;
 }
 .logo-studio {
     font-family: "Raleway", sans-serif;
@@ -110,6 +99,8 @@ header .container {
     letter-spacing: 0.02em;
     color: var(--textbasecolor);
     text-decoration: none;
+    display: block;
+    padding: 24px 0px 24px 0px;
 }
 .menu:hover {
     color :var(--textsecondcolor);
@@ -117,9 +108,21 @@ header .container {
 .menu:focus {
     color: var(--buttonbasecolor);
 }
+.list-contacts {
+    list-style: none;
+    gap: 40px;
+    display: flex;
+    padding: 0;
+    margin: 0 0 0 332px;
+    /*margin-left: auto;*/
+}
 .contacts {
-    text-decoration: none;
-    color:var(--textsecondcolor);
+line-height: 1.5;
+letter-spacing: 0.02em;
+text-decoration: none;
+color:var(--textsecondcolor);
+display : block;
+padding: 24px 0px 24px 0px;
 }
 .contacts:hover, .contacts:focus {
     color: var(--buttonbasecolor);
@@ -130,17 +133,18 @@ header .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 192px 318px 192px 318px;
+   /* padding: 192px 318px 192px 318px;*/
 }
 .hero {
     background: var(--textbasecolor);
-   /* padding: 192px 474px 291px 474px;*/
+    padding: 192px 0 192px 0;
 }
 .hero-title {
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
+    width: 496px;
     color: var(--addtextcolor);  
 }
 .button-order {
@@ -167,6 +171,9 @@ header .container {
 .button-order:focus {
     background-color: var(--buttonbackcol);
 }
+.benefits {
+    padding: 120px 0px 120px 0px;
+}
 .benefits-title {
     font-weight: 500;
     font-size: 20px;
@@ -177,21 +184,21 @@ header .container {
 .benefits-list {
     list-style: none;
     display: flex;
-    margin: 0px;
+    margin: 0;
+    padding: 0;
     justify-content: space-between;
-    padding: 120px 0px 120px 0px;
     gap: 24px;
 }
 .benefits-item {
     width: 264px;
 }
 .benefits-text {
+    line-height: 1.5;
     margin-top: 8px;
-    height: 72px;
     color:var(--textsecondcolor);
 }
 .work {
-    padding: 120px 0px 0px 0px;
+    padding: 0px 0px 120px 0px;
 }
 .work .container {
     display: flex;
@@ -209,15 +216,14 @@ header .container {
 .work-list {
     list-style: none;
     display: flex;
-    margin: 0px;
-    padding: 72px 0px 0px 0px;
+    margin: 72px 0 0 0;
+    padding: 0;
     gap: 24px;
-}
-.work-item {
 }
 .team {
     background-color: #F4F4FD ;
-    margin-top: 120px;
+    margin-top: 0px;
+    padding: 120px 0 120px 0;
 }
 .team-text {
     color:var(--textsecondcolor);
@@ -235,13 +241,13 @@ header .container {
     letter-spacing: 0.02em;
     color: var(--textbasecolor);
     text-transform: capitalize;
-    margin-top: 120px;
+   /* margin-top: 120px;*/
 }
 .team-list {
     list-style: none;
     display: flex;
-    margin: 0px;
-    padding: 72px 0px 120px 0px;
+    margin: 72px 0 0 0;
+    padding: 0;
     gap: 24px;
 }
 .team-card {
@@ -262,30 +268,26 @@ header .container {
 /* общий футер */
 .footer {
     background-color: var(--textbasecolor);
-    padding: 100px 0px 100px 15px;
-}
-footer .logo {
-    padding: 0px;
-}
-.footer-logo {
-    width: 264px;
-    height: 110px;
-    
+    padding: 100px 0px 100px 0px;
 }
 .footer-text {
+    line-height: 1.5;
     margin-top: 16px;
-    height: 72px;
+    width: 264px;
     color: var(--footertextcol);
 }
 /* конец общего футера */
 /* страница Portfolio */
+.portfolio {
+    padding: 96px 0 120px 0;
+}
 .portfolio-buttons-list {
     list-style: none;
     display: flex;
     justify-content: center;
     column-gap: 24px;
-    padding: 96px 0px 72px 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
 }
 .button-filter {
     font-family: inherit;
@@ -299,6 +301,7 @@ footer .logo {
     border-color: #E7E9FC;
     border-width: 1px;
     border-style: inset;
+    border: none;
     padding: 8px 16px 8px 16px;
     background-color:#F4F4FD;
 }
@@ -306,13 +309,11 @@ footer .logo {
     background: var(--buttonbasecolor);
     color : var(--addtextcolor)
 }
-.portfolio {
-}
 .portfolio-list {
-    margin: 0px;
     display: flex;
     flex-wrap: wrap;
-    padding: 0 0 120px 0;
+    padding: 0;
+    margin: 72px 0 0 0;
     column-gap: 24px;
     row-gap: 48px;
 }
