@@ -1,0 +1,326 @@
+:root {
+    --textbasecolor:#2e2f42; /* базовый цвет шрифта*/
+    --buttonbasecolor:#4d5ae5; /* цвет кнопки, эффекты */
+    --textsecondcolor: #404455; /* второй цвет шрифта*/
+    --textbenefitscol:#434455;
+    --addtextcolor: #ffffff; /*доп цвет заголовков, кнопок*/
+    --buttonbackcol: #404BBF; /*цвет бека кнопки*/
+    --footertextcol: #f4f4fd; /*цвет текста в футере*/
+    --footerlogocol: #f4f4fd; /*цвет лого STUDIO в футере*/
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    color: #434455;
+    background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+img {
+    display: block;
+}
+/* общий стиль хедера для страницы studio и portfolio */
+.header {
+    border-bottom: 1px solid #E7E9FC;
+}
+.container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+header .container {
+    display: flex;
+}
+
+.header nav {
+    display: flex;
+}
+
+.link {
+    text-decoration: none;
+}
+.list {
+    list-style: none;
+}
+.list-menu {
+    list-style: none;
+    gap: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0; 
+    margin: 0px 0px 0px 77px;
+}
+.logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--buttonbasecolor);
+    padding: 24px 0px 24px 0px;
+    margin: 0;
+}
+.logo-studio {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color:var(--textbasecolor);
+}
+.logo-studio-footer {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--footerlogocol);
+}
+.menu { 
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--textbasecolor);
+    text-decoration: none;
+    display: block;
+    padding: 24px 0px 24px 0px;
+}
+.menu:hover {
+    color :var(--buttonbackcol);
+}
+.menu:focus {
+    color: var(--buttonbackcol);
+}
+.list-contacts {
+    list-style: none;
+    gap: 40px;
+    display: flex;
+    padding: 0;
+    margin: 0 0 0 332px;
+}
+.contacts-adr {
+    font-style: normal;
+}
+.contacts {
+line-height: 1.5;
+letter-spacing: 0.02em;
+text-decoration: none;
+font-style: normal;
+color:#434455;
+display : block;
+padding: 24px 0px 24px 0px
+}
+.contacts:hover, .contacts:focus {
+    color: var(--buttonbackcol);
+}
+/* конец хедера */
+/* страница Studio */
+.hero {
+    background: var(--textbasecolor);
+    padding: 188px 0 188px 0;
+}
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.hero-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    text-align: center;
+    width: 496px;
+    color: var(--addtextcolor);  
+}
+.button-order {
+    font-family: inherit;;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: var(--addtextcolor);
+    background-color: var(--buttonbasecolor);
+    cursor:pointer;
+    width:169px;
+    height: 56px;      
+    white-space: nowrap; 
+    border-radius: 4px;
+    padding: 16px 32px;
+    margin-top: 48px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    border: 0px solid var(--buttonbasecolor);     
+}
+.button-order:hover {
+    background-color: var(--buttonbackcol);
+}
+.button-order:focus {
+    background-color: var(--buttonbackcol);
+}
+.section {
+    padding: 120px 0px;
+}
+.benefits {
+
+}
+.benefits-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color:var(--textbasecolor);
+}
+.benefits-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    gap: 24px;
+}
+.benefits-item {
+    width: 264px;
+}
+
+.benefits-text {
+    line-height: 1.5;
+    color:var(--textbenefitscol);
+}
+
+.team {
+    background-color: #F4F4FD;
+    margin-top: 0px;
+}
+
+.team .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-text {
+    line-height: 1.5;
+    color:var(--textbenefitscol);
+    margin-top: 8px;
+}
+
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: var(--textbasecolor);
+    text-transform: capitalize;
+    text-align: center;
+}
+.team-list {
+    list-style: none;
+    display: flex;
+    margin: 72px 0 0 0;
+    padding: 0;
+    gap: 24px;
+}
+.team-card { 
+    background-color: #ffffff;
+    overflow: hidden;
+    border-bottom-left-radius:  4px;
+    border-bottom-right-radius:  4px;
+    box-shadow:  0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.team-card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 16px 32px 16px;
+}
+
+/* секция Portfolio */
+.portfolio {
+
+}
+.portfolio-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: var(--textbasecolor);
+    text-transform: capitalize;
+    text-align: center;
+}
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 72px 0 0 0;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+
+.portfolio-card {
+    list-style: none;
+}
+.portfolio-item {
+    background-color: #ffffff;
+    padding: 32px 0px 32px 16px;
+    border-left: 1px solid #E7E9FC;
+    border-right: 1px solid #E7E9FC;
+    border-bottom: 1px solid #E7E9FC;
+    /* box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
+    0px 1px 1px rgba(46, 47, 66, 0.16), 
+    0px 2px 1px rgba(46, 47, 66, 0.08); */
+    border-top: none;
+}
+.portfolio-title-card {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color:var(--textbasecolor);
+}
+.portfolio-text {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--textbenefitscol);
+}
+/* общий футер */
+.footer {
+    background-color: var(--textbasecolor);
+    padding: 100px 0px;
+}
+footer .logo{
+    padding: 0;
+}
+.footer-text {
+    line-height: 1.5;
+    color: var(--footertextcol);
+    margin-top: 16px;
+    width: 264px;
+}
+/* конец общего футера */
